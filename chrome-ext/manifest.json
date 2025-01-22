@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "AI Content Scanner",
+    "version": "0.1",
+    "description": "Scan selhected content for AI generation",
+    "permissions": [
+      "contextMenus",
+      "storage",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "https://api.zerogpt.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "options_page": "options.html"
+  }
+  
