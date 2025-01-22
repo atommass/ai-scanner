@@ -10,7 +10,7 @@ A Chrome extension that allows users to scan selected text for AI-generated cont
 ## Installation
 1. Clone this repository or download the source code:
 ```
-git clone
+git clone https://github.com/atommass/ai-scanner.git
 ```
 2. Load the extension in Chrome:
 3. Open Chrome and navigate to --> chrome://extensions/
